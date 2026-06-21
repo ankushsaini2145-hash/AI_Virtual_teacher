@@ -1,0 +1,117 @@
+[
+    {
+        "question":"which type of programming does python support?",
+        "option":["object-oriented programming","structured programming","function al programming","all of the mentioned"],
+        "correct":"all of the mentioned"
+    },
+    {
+        "question":"all keywords in python are in __",
+        "option":["lowercase","uppercase","capitalized","none of the mentioned"],
+        "correct":"none of the mentioned"
+    },
+    {
+        "question":"which of the following variable declaration is incorrect?",
+        "option":["a_=3","_a=3","a?=3","all"],
+        "correct":"a?=3"
+    },
+    {
+        "question":"What is the correct file extension for Python files?",
+        "option":[".pt",".py",".python",".pyt"],
+        "correct":".py"
+    },
+    {
+        "question":"Which keyword is used to define a function in Python?",
+        "option":["function","define","def","fun"],
+        "correct":"def"
+    },
+    {
+        "question":"Which of the following is used to take input from the user?",
+        "option":["scan()","cin()","input()","get()"],
+        "correct":"input()"
+    },
+    {
+        "question":"What is the output of print(2 + 3 * 2)?",
+        "option":["10","12","8","7"],
+        "correct":"8"
+    },
+    {
+        "question":"Which data type is used to store True or False values?",
+        "option":["int","bool","str","float"],
+        "correct":"bool"
+    },
+    {
+        "question":"Which symbol is used for comments in Python?",
+        "option":["//","/* */","#","--"],
+        "correct":"#"
+    },
+    {
+        "question":"Which loop is used when the number of iterations is known?",
+        "option":["while","do-while","for","infinite"],
+        "correct":"for"
+    },
+    {
+        "question":"Which function is used to display output in Python?",
+        "option":["echo()","display()","print()","show()"],
+        "correct":"print()"
+    },
+    {
+        "question":"Which of these is a Python keyword?",
+        "option":["repeat","elif","switch","then"],
+        "correct":"elif"
+    },
+    {
+        "question":"Python is a ______ language.",
+        "option":["Low-level","Machine","High-level","Assembly"],
+        "correct":"High-level"
+    },
+    {
+        "question":"Which of the following is a mutable data type?",
+        "option":["tuple","string","list","int"],
+        "correct":"list"
+    },
+    {
+        "question":"What is the output of len('Python')?",
+        "option":["5","6","7","structured programming"],
+        "correct":"6"
+    },
+    {
+        "question":"Which keyword is used for conditional checking?",
+        "option":["check","if","when","case"],
+        "correct":"if"
+    },
+    {
+        "question":"What does // operator do in Python?",
+        "option":["Division","Floor division","Multiplication","Modulus"],
+        "correct":"Floor division"
+    },
+    {
+        "question":"Which of the following is used to create a loop?",
+        "option":["repeat","loop","for","iterate"],
+        "correct":"for"
+    },
+    {
+        "question":"Which symbol is used for exponentiation?",
+        "option":["^","//","**","%%"],
+        "correct":"**"
+    },
+    {
+        "question":"What is the correct way to create a variable?",
+        "option":["int x = 5","x = 5","let x = 5","var x = 5"],
+        "correct":"x = 5"
+    },
+    {
+        "question":"Which data type is used for decimal numbers?",
+        "option":["int","str","float","bool"],
+        "correct":"float"
+    },
+    {
+        "question":"What is the output of print(type(10))?",
+        "option":["float","int","str","bool"],
+        "correct":"int"
+    },
+    {
+        "question":"Which keyword is used to exit a loop?",
+        "option":["stop","break","exitloop","return"],
+        "correct":"break"
+    }
+]
