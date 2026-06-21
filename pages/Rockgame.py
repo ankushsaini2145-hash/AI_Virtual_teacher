@@ -22,7 +22,6 @@ with c4:
                 st.write("Draw 🤝")
             elif st.session_state['i']=="rock" and user=="scissors" or st.session_state['i']=="scissors" and user=="paper" or st.session_state['i']=="rock" and user=="scissors":
                 st.write("Lose 😔")
-                st.write(st.session_state['i'])
             else:
                 st.write("Computer Choice:",st.session_state['i'])
                 st.write("Win 🏆")
