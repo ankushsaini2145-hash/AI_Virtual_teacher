@@ -16,7 +16,7 @@ if st.button("Submit"):
     if st.session_state['i']==user:
         st.success("Correct Number")
         st.session_state['Score']+=1
-if st.button("Hint"):
+    else:
         if st.session_state['i']>user:
             st.write("Number Is Big")
         elif st.session_state['i']<user:

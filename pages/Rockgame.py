@@ -10,9 +10,9 @@ def Game():
     return r.choice(a)
 if 'i' not in st.session_state:
     st.session_state['i']=Game()
-c3,c4,c5=st.columns([1,2,1])
+c3,c4,c5=st.columns([.5,3,.5])
 with c4:
-    user=st.text_input("Enter choice(Rock Paper Scissors):")
+    user=st.selectbox("Select Your Choice:",["Rock","Paper","Scissors"])
     user=user.lower()
     c6,c7=st.columns(2)
     with c6:
@@ -21,6 +21,7 @@ with c4:
                 st.write("Computer Choice:",st.session_state['i'])
                 st.write("Draw 🤝")
             elif st.session_state['i']=="rock" and user=="scissors" or st.session_state['i']=="scissors" and user=="paper" or st.session_state['i']=="rock" and user=="scissors":
+                st.write("Computer Choice:",st.session_state['i'])
                 st.write("Lose 😔")
             else:
                 st.write("Computer Choice:",st.session_state['i'])

@@ -18,11 +18,14 @@ with st.form("My"):
     password=st.text_input("Enter Password",type="password")
     Profession=st.selectbox("Enter Your Profession:",["Student","Teacher","Admin"])
     if st.form_submit_button("Submit"):
-        s={
+        if user and password:
+            s={
             "user":user,
             "password": password,
             "profession": Profession
-        }
-        st.session_state['i'].append(s)
-        File(st.session_state['i'])
-        st.success("Submit")
+            }
+            st.session_state['i'].append(s)
+            File(st.session_state['i'])
+            st.success("Submit")
+        else:
+            st.warning("Please Under Details")
