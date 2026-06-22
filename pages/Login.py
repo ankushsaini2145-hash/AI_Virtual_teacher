@@ -14,9 +14,9 @@ def Login():
 if 'i' not in st.session_state:
     st.session_state['i']=Login()
 with st.form("My Form"):
-    User=st.text_input("Enter Your Name:")
-    Password=st.text_input("Enter Your Password:",type="password")
-    Profession=st.selectbox("Enter Your Profession:",["Student","Teacher","Admin"])
+    User=st.text_input("Enter Username:")
+    Password=st.text_input("Enter Password:",type="password")
+    Profession=st.selectbox("Enter Profession:",["Student","Teacher","Admin"])
     if st.form_submit_button("Submit"):
         for i in st.session_state['i']:
             if i["user"]==User:

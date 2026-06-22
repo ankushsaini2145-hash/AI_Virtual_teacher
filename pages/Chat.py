@@ -17,11 +17,11 @@ if 'data' not in st.session_state:
 if 'A' not in st.session_state:
     st.session_state['A']=[]
 Today=datetime.datetime.today()
-if Today.hour+5<12:
+if (Today.hour+5)<12:
     st.write("Good Morning")
-elif Today.hour+5>12 and Today.hour+5<=19:
+elif (Today.hour+5)>=12:
     st.write("Good Afternoon")
-elif Today.hour+5>19:
+elif (Today.hour+5)>=19:
     st.write("Good Night")
 c1,c2=st.columns([2.5,1.5])
 a=st.chat_input("Enter Your Question:")
@@ -31,10 +31,21 @@ if a:
     a=nlp.token(a)
     a=nlp.Remove(a)
     st.session_state['A'].append(a)
-    for i in st.session_state['data']:
-        if i in a:
-            st.write("Answer:",st.session_state['data'][i])
-            break
+    if "help" in a:
+        st.write("All Command")
+        for i in st.session_state['data']:
+            st.write(i)
+    elif "hi" in a:
+        st.write("Hi there! Welcome to AI Virtual Teacher.")
+    elif "hello" in a:
+        st.write("Hello! How can I help you today? 😊 if you check command enter help")
+    elif "date" in a:
+        st.write("Date",datetime.datetime.now().date())
+    else:
+        for i in st.session_state['data']:
+            if i in a:
+                st.write("Answer:",st.session_state['data'][i])
+                break
 if a:
     with c1:
         pass

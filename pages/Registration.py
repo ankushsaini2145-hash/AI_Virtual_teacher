@@ -14,10 +14,13 @@ with c1:
 with c2:
     st.markdown("## Registration Page ##")
 with st.form("My"):
+    Name=st.text_input("Enter Name:")
     user=st.text_input("Enter Username:")
-    password=st.text_input("Enter Password",type="password")
-    Profession=st.selectbox("Enter Your Profession:",["Student","Teacher","Admin"])
-    if st.form_submit_button("Submit"):
+    Email=st.text_input("Enter Email:")
+    password=st.text_input("Enter Password:",type="password")
+    c_p=st.text_input("Enter Confirm Password",type="password")
+    Profession=st.selectbox("Enter Profession:",["Student","Teacher","Admin"])
+    if st.form_submit_button("Create Account"):
         if user and password:
             s={
             "user":user,
@@ -26,6 +29,6 @@ with st.form("My"):
             }
             st.session_state['i'].append(s)
             File(st.session_state['i'])
-            st.success("Submit")
+            st.success("Successfully Create Account")
         else:
-            st.warning("Please Under Details")
+            st.error("Please Under Details")
